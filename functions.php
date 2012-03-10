@@ -10,5 +10,5 @@ function addUser($username, $password){
 	print $out;
 }
 
-addUser("testbox", "cheese");
+var_dump(addUser("testbox", "cheese"));
 ?>
