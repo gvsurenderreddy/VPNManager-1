@@ -7,8 +7,7 @@ function viewKeys(){
 
 function addUser($username, $password){
 	exec("sudo adduser $username", $out);
-	print $out;
+	print var_dump($out);
 }
 
-var_dump(addUser("testbox", "cheese"));
 ?>
