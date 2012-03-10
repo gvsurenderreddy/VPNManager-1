@@ -6,7 +6,7 @@ function viewKeys(){
 }
 
 function addUser($username, $password){
-	exec("sudo adduser $username", $out);
+	exec("adduser -u $username -p $password -g users -s /bin/bash", $out);
 	print var_dump($out);
 }
 
